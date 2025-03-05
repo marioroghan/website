@@ -293,37 +293,37 @@
         }
       </script>
    
-    <div class="review-wrapper">
-        <div class="review-container">
-            <div class="greeting">Hello, Mario</div>
+   <form action="submit_review.php" method="POST">
+    <div class="greeting">Hello, <input type="text" name="username" required></div>
 
-            <div class="question">Is this website useful to you?</div>
-            <div class="radio-group">
-                <input type="radio" id="yes" name="useful" value="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" name="useful" value="no">
-                <label for="no">No</label>
-            </div>
-
-            <div class="question">Kindly rate our website</div>
-            <div class="star-rating">
-                <input type="radio" id="star5" name="rating" value="5">
-                <label for="star5">★</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4">★</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3">★</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2">★</label>
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1">★</label>
-            </div>
-
-            <div class="question">Kindly share your suggestions and comments</div>
-            <textarea placeholder="Write your feedback here..."></textarea>
-            <button type="submit">Submit</button>
-        </div>
+    <div class="question">Is this website useful to you?</div>
+    <div class="radio-group">
+        <input type="radio" id="yes" name="useful" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="useful" value="no">
+        <label for="no">No</label>
     </div>
+
+    <div class="question">Kindly rate our website</div>
+    <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">★</label>
+    </div>
+
+    <div class="question">Kindly share your suggestions and comments</div>
+    <textarea name="suggestion" placeholder="Write your feedback here..."></textarea>
+    
+    <button type="submit">Submit</button>
+</form>
+
 
 </body>
 </html>
